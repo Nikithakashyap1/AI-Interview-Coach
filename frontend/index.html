@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Interview Coach</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==================================================
+         START SCREEN
+    ================================================== -->
+
+    <div class="container" id="startScreen">
+
+        <h1>AI Interview Coach</h1>
+
+        <p class="subtitle">
+            Practice smarter. Interview better.
+        </p>
+
+
+        <div class="form">
+
+            <h2>Set up your interview</h2>
+
+            <p class="form-description">
+                Choose your role, experience level and interview mode.
+            </p>
+
+
+            <!-- ROLE -->
+
+            <div class="field">
+
+                <label for="role">
+                    🎯 Interview Role
+                </label>
+
+                <select id="role">
+
+                    <option value="Software Developer">
+                        💻 Software Developer
+                    </option>
+
+                    <option value="Data Analyst">
+                        📊 Data Analyst
+                    </option>
+
+                    <option value="Web Developer">
+                        🌐 Web Developer
+                    </option>
+
+                    <option value="Software Tester">
+                        🧪 Software Tester
+                    </option>
+
+                    <option value="Data Scientist">
+                        🤖 Data Scientist
+                    </option>
+
+                    <option value="Machine Learning Engineer">
+                        🧠 Machine Learning Engineer
+                    </option>
+
+                    <option value="Frontend Developer">
+                        🎨 Frontend Developer
+                    </option>
+
+                    <option value="Backend Developer">
+                        ⚙️ Backend Developer
+                    </option>
+
+                    <option value="Full Stack Developer">
+                        🖥️ Full Stack Developer
+                    </option>
+
+                    <option value="DevOps Engineer">
+                        ☁️ DevOps Engineer
+                    </option>
+
+                    <option value="Cybersecurity Analyst">
+                        🔐 Cybersecurity Analyst
+                    </option>
+
+                    <option value="UI/UX Designer">
+                        ✨ UI/UX Designer
+                    </option>
+
+                    <option value="Product Manager">
+                        📋 Product Manager
+                    </option>
+
+                    <option value="Business Analyst">
+                        📈 Business Analyst
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- EXPERIENCE -->
+
+            <div class="field">
+
+                <label for="level">
+                    🌱 Experience Level
+                </label>
+
+                <select id="level">
+
+                    <option value="Fresher">
+                        🌱 Fresher
+                    </option>
+
+                    <option value="Beginner">
+                        🚀 Beginner
+                    </option>
+
+                    <option value="Intermediate">
+                        ⭐ Intermediate
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- INTERVIEW MODE -->
+
+            <div class="field">
+
+                <label for="interviewMode">
+                    🎤 Interview Mode
+                </label>
+
+                <select id="interviewMode">
+
+                    <option value="Mixed Interview">
+                        🔀 Mixed Interview
+                    </option>
+
+                    <option value="Technical Interview">
+                        💻 Technical Interview
+                    </option>
+
+                    <option value="HR Interview">
+                        👥 HR Interview
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- START -->
+
+            <button id="startBtn">
+                Start Interview →
+            </button>
+
+
+            <p class="small-info">
+                5 questions&nbsp; • &nbsp;Voice enabled
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ==================================================
+         INTERVIEW SCREEN
+    ================================================== -->
+
+    <div
+        class="container interview-screen"
+        id="interviewScreen"
+    >
+
+        <p class="question-number">
+            Question 1 of 5
+        </p>
+
+
+        <h2 id="question">
+            Tell me about yourself.
+        </h2>
+
+
+        <!-- VOICE -->
+
+        <div class="voice-section">
+
+            <button id="speakBtn">
+                🔊 Hear Question
+            </button>
+
+            <button id="micBtn">
+                🎤 Start Speaking
+            </button>
+
+            <p id="status">
+                Click the microphone and start answering.
+            </p>
+
+        </div>
+
+
+        <!-- ANSWER -->
+
+        <div class="answer-box">
+
+            <h3>
+                Your Answer
+            </h3>
+
+            <p id="answer">
+                Your spoken answer will appear here...
+            </p>
+
+        </div>
+
+
+        <!-- SUBMIT -->
+
+        <button id="submitBtn">
+            Submit Answer
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

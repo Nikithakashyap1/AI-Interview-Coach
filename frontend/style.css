@@ -1,0 +1,1075 @@
+/* ==========================================================
+   AI INTERVIEW COACH
+   PREMIUM DARK / GLOSSY GREEN UI
+   ========================================================== */
+
+
+/* ==========================================================
+   RESET
+   ========================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ==========================================================
+   BODY
+   ========================================================== */
+
+body {
+    min-height: 100vh;
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    color: #eef7f1;
+
+    background:
+        radial-gradient(
+            circle at 20% 10%,
+            rgba(0, 255, 150, 0.10),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 85% 80%,
+            rgba(0, 255, 150, 0.07),
+            transparent 32%
+        ),
+        linear-gradient(
+            135deg,
+            #03110b,
+            #061a12 45%,
+            #020b07
+        );
+
+    padding: 1px 20px 60px;
+
+    overflow-x: hidden;
+}
+
+
+/* ==========================================================
+   MAIN GLASS CONTAINER
+   ========================================================== */
+
+.container {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 65px auto;
+
+    padding: 44px;
+
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+
+    overflow: visible !important;
+
+    border-radius: 23px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.075),
+            rgba(255, 255, 255, 0.025)
+        );
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.10);
+
+    box-shadow:
+        0 25px 70px
+        rgba(0, 0, 0, 0.45),
+
+        inset 0 1px 0
+        rgba(255, 255, 255, 0.08);
+
+    backdrop-filter:
+        blur(18px);
+
+    -webkit-backdrop-filter:
+        blur(18px);
+}
+
+
+/* ==========================================================
+   START SCREEN
+   ========================================================== */
+
+#startScreen {
+    max-width: 700px;
+
+    text-align: center;
+}
+
+
+/* ==========================================================
+   MAIN TITLE
+   ========================================================== */
+
+h1 {
+    font-size: 46px;
+
+    font-weight: 750;
+
+    letter-spacing: -1.5px;
+
+    margin-bottom: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #b8f5d4
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* ==========================================================
+   SUBTITLE
+   ========================================================== */
+
+.subtitle {
+    color: #8ea99a;
+
+    font-size: 17px;
+
+    margin-bottom: 38px;
+}
+
+
+/* ==========================================================
+   FORM
+   ========================================================== */
+
+.form {
+    width: 100%;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    background:
+        rgba(255, 255, 255, 0.035);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.07);
+
+    box-shadow:
+        inset 0 1px 0
+        rgba(255, 255, 255, 0.04);
+}
+
+
+/* ==========================================================
+   FORM HEADING
+   ========================================================== */
+
+.form h2 {
+    font-size: 25px;
+
+    margin-bottom: 8px;
+
+    color: #f2fff7;
+}
+
+
+.form-description {
+    color: #8fa99a;
+
+    font-size: 14px;
+
+    margin-bottom: 27px;
+}
+
+
+/* ==========================================================
+   FIELD GRID
+   ========================================================== */
+
+.form {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+/* Keep heading and description full width */
+
+.form h2,
+.form-description,
+.form button,
+.small-info {
+    grid-column: 1 / -1;
+}
+
+
+/* ==========================================================
+   FIELD
+   ========================================================== */
+
+.field {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+
+    text-align: left;
+}
+
+
+.field label {
+    color: #cfe8d9;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* ==========================================================
+   SELECT
+   ========================================================== */
+
+.field select {
+    width: 100%;
+
+    padding: 14px 15px;
+
+    border-radius: 12px;
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.09);
+
+    outline: none;
+
+    background:
+        rgba(0, 0, 0, 0.28);
+
+    color: #edf8f1;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.field select:focus {
+    border-color:
+        rgba(77, 255, 157, 0.45);
+
+    box-shadow:
+        0 0 0 3px
+        rgba(77, 255, 157, 0.08);
+}
+
+
+.field select option {
+    background: #07160f;
+
+    color: #ffffff;
+}
+
+
+/* ==========================================================
+   BUTTONS
+   ========================================================== */
+
+button {
+    border: none;
+
+    outline: none;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease,
+        opacity 0.18s ease;
+}
+
+
+button:hover {
+    transform:
+        translateY(-2px);
+}
+
+
+button:active {
+    transform:
+        translateY(0);
+}
+
+
+button:disabled {
+    opacity: 0.55;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+
+/* ==========================================================
+   START BUTTON
+   ========================================================== */
+
+#startBtn {
+    width: 100%;
+
+    padding: 15px 20px;
+
+    margin-top: 5px;
+
+    border-radius: 12px;
+
+    color: #021108;
+
+    font-size: 15px;
+
+    font-weight: 750;
+
+    background:
+        linear-gradient(
+            135deg,
+            #72ffb0,
+            #24dc78
+        );
+
+    box-shadow:
+        0 10px 30px
+        rgba(36, 220, 120, 0.18);
+}
+
+
+#startBtn:hover {
+    box-shadow:
+        0 14px 35px
+        rgba(36, 220, 120, 0.27);
+}
+
+
+/* ==========================================================
+   SMALL INFO
+   ========================================================== */
+
+.small-info {
+    color: #718b7c;
+
+    font-size: 12px;
+
+    margin-top: 2px;
+}
+
+
+/* ==========================================================
+   INTERVIEW SCREEN
+   ========================================================== */
+
+.interview-screen {
+    display: none;
+
+    max-width: 900px;
+
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+
+    overflow: visible !important;
+
+    padding-top: 48px;
+}
+
+
+/* ==========================================================
+   QUESTION NUMBER
+   ========================================================== */
+
+.question-number {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #62ef9c;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* ==========================================================
+   QUESTION
+   IMPORTANT: NEVER CLIP THIS
+   ========================================================== */
+
+#question {
+    display: block !important;
+
+    width: 100% !important;
+
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    max-height: none !important;
+
+    margin-top: 0;
+
+    margin-bottom: 32px;
+
+    color: #f1faf4;
+
+    font-size: 30px;
+
+    font-weight: 650;
+
+    line-height: 1.5;
+
+    white-space: normal !important;
+
+    overflow: visible !important;
+
+    overflow-x: visible !important;
+
+    overflow-y: visible !important;
+
+    text-overflow: clip !important;
+
+    word-wrap: break-word !important;
+
+    overflow-wrap: anywhere !important;
+
+    word-break: normal !important;
+
+    -webkit-line-clamp: unset !important;
+
+    -webkit-box-orient: unset !important;
+}
+
+
+/* ==========================================================
+   VOICE SECTION
+   ========================================================== */
+
+.voice-section {
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+}
+
+
+/* ==========================================================
+   VOICE BUTTONS
+   ========================================================== */
+
+#speakBtn,
+#micBtn {
+    padding: 11px 16px;
+
+    border-radius: 10px;
+
+    color: #dff7e9;
+
+    background:
+        rgba(255, 255, 255, 0.045);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.09);
+
+    font-size: 13px;
+}
+
+
+#speakBtn:hover,
+#micBtn:hover {
+    border-color:
+        rgba(99, 240, 157, 0.30);
+
+    background:
+        rgba(99, 240, 157, 0.07);
+}
+
+
+/* ==========================================================
+   STATUS
+   ========================================================== */
+
+#status {
+    width: 100%;
+
+    color: #829b8d;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    margin-top: 3px;
+}
+
+
+/* ==========================================================
+   ANSWER BOX
+   ========================================================== */
+
+.answer-box {
+    width: 100%;
+
+    min-height: 145px;
+
+    height: auto !important;
+
+    max-height: none !important;
+
+    overflow: visible !important;
+
+    padding: 22px;
+
+    margin-bottom: 20px;
+
+    border-radius: 15px;
+
+    background:
+        rgba(255, 255, 255, 0.035);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.075);
+
+    box-shadow:
+        inset 0 1px 0
+        rgba(255, 255, 255, 0.035);
+}
+
+
+.answer-box h3 {
+    color: #dff5e7;
+
+    font-size: 14px;
+
+    margin-bottom: 12px;
+}
+
+
+.answer-box p {
+    color: #a8bdb0;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    white-space: pre-wrap;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* ==========================================================
+   SUBMIT BUTTON
+   ========================================================== */
+
+#submitBtn {
+    width: 100%;
+
+    padding: 15px 20px;
+
+    border-radius: 12px;
+
+    color: #021108;
+
+    font-size: 15px;
+
+    font-weight: 750;
+
+    background:
+        linear-gradient(
+            135deg,
+            #72ffb0,
+            #24dc78
+        );
+
+    box-shadow:
+        0 10px 30px
+        rgba(36, 220, 120, 0.16);
+}
+
+
+#submitBtn:hover {
+    box-shadow:
+        0 14px 35px
+        rgba(36, 220, 120, 0.25);
+}
+
+
+/* ==========================================================
+   EVALUATION CARD
+   ========================================================== */
+
+.evaluation-card {
+    width: 100%;
+
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    max-height: none !important;
+
+    overflow: visible !important;
+
+    margin-top: 30px;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(255, 255, 255, 0.022)
+        );
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.075);
+
+    box-shadow:
+        0 18px 50px
+        rgba(0, 0, 0, 0.25),
+
+        inset 0 1px 0
+        rgba(255, 255, 255, 0.045);
+}
+
+
+/* ==========================================================
+   EVALUATION HEADER
+   ========================================================== */
+
+.evaluation-header {
+    margin-bottom: 25px;
+}
+
+
+.evaluation-header h2 {
+    color: #f1fff6;
+
+    font-size: 25px;
+
+    margin-bottom: 7px;
+}
+
+
+.evaluation-header p {
+    color: #829c8d;
+
+    font-size: 13px;
+}
+
+
+/* ==========================================================
+   SCORE GRID
+   ========================================================== */
+
+.score-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+}
+
+
+/* ==========================================================
+   SCORE CARD
+   ========================================================== */
+
+.score-card {
+    min-width: 0;
+
+    padding: 17px;
+
+    border-radius: 13px;
+
+    text-align: center;
+
+    background:
+        rgba(255, 255, 255, 0.035);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.065);
+}
+
+
+.score-card span {
+    display: block;
+
+    color: #849e90;
+
+    font-size: 11px;
+
+    margin-bottom: 7px;
+}
+
+
+.score-card strong {
+    color: #75ffaf;
+
+    font-size: 21px;
+}
+
+
+/* ==========================================================
+   FEEDBACK COLUMNS
+   ========================================================== */
+
+.feedback-columns {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+
+    margin-bottom: 20px;
+}
+
+
+/* ==========================================================
+   FEEDBACK SECTION
+   ========================================================== */
+
+.feedback-section {
+    min-width: 0;
+
+    padding: 18px;
+
+    border-radius: 13px;
+
+    background:
+        rgba(255, 255, 255, 0.025);
+
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.055);
+}
+
+
+.feedback-section h3,
+.coach-advice h3,
+.ideal-answer h3 {
+    color: #dff5e7;
+
+    font-size: 14px;
+
+    margin-bottom: 11px;
+}
+
+
+.feedback-section ul {
+    padding-left: 19px;
+}
+
+
+.feedback-section li {
+    color: #9eb5a6;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    margin-bottom: 5px;
+}
+
+
+/* ==========================================================
+   COACH ADVICE
+   ========================================================== */
+
+.coach-advice {
+    padding: 18px;
+
+    margin-top: 18px;
+
+    border-radius: 13px;
+
+    background:
+        rgba(70, 255, 150, 0.035);
+
+    border:
+        1px solid
+        rgba(70, 255, 150, 0.075);
+}
+
+
+.coach-advice p {
+    color: #a7bdb0;
+
+    font-size: 13px;
+
+    line-height: 1.75;
+}
+
+
+/* ==========================================================
+   IDEAL ANSWER
+   ========================================================== */
+
+.ideal-answer {
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    max-height: none !important;
+
+    overflow: visible !important;
+
+    margin-top: 18px;
+
+    padding: 20px;
+
+    border-radius: 13px;
+
+    background:
+        rgba(90, 255, 165, 0.045);
+
+    border:
+        1px solid
+        rgba(90, 255, 165, 0.10);
+}
+
+
+.ideal-answer p {
+    color: #b5cbbd;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    white-space: normal;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* ==========================================================
+   REVIEW CARD
+   ========================================================== */
+
+.review-card {
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    max-height: none !important;
+
+    overflow: visible !important;
+}
+
+
+.review-card > p {
+    white-space: normal !important;
+
+    overflow: visible !important;
+
+    overflow-wrap: anywhere !important;
+}
+
+
+/* ==========================================================
+   FINAL REVIEW
+   ========================================================== */
+
+#finalReview {
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    max-height: none !important;
+
+    overflow: visible !important;
+}
+
+
+/* ==========================================================
+   RESPONSIVE - TABLET
+   ========================================================== */
+
+@media (max-width: 800px) {
+
+    .container {
+        margin: 35px auto;
+
+        padding: 32px;
+    }
+
+
+    h1 {
+        font-size: 38px;
+    }
+
+
+    #question {
+        font-size: 27px;
+    }
+
+
+    .score-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE - MOBILE
+   ========================================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding-left: 12px;
+
+        padding-right: 12px;
+    }
+
+
+    .container {
+        margin: 20px auto;
+
+        padding: 24px;
+
+        border-radius: 18px;
+    }
+
+
+    #startScreen {
+        max-width: 100%;
+    }
+
+
+    h1 {
+        font-size: 32px;
+    }
+
+
+    .subtitle {
+        font-size: 15px;
+
+        margin-bottom: 28px;
+    }
+
+
+    .form {
+        grid-template-columns: 1fr;
+
+        padding: 22px;
+    }
+
+
+    .field {
+        grid-column: 1 / -1;
+    }
+
+
+    #question {
+        font-size: 24px;
+
+        line-height: 1.5;
+    }
+
+
+    .voice-section {
+        align-items: stretch;
+
+        flex-direction: column;
+    }
+
+
+    #speakBtn,
+    #micBtn {
+        width: 100%;
+    }
+
+
+    .score-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .feedback-columns {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ==========================================================
+   VERY SMALL SCREENS
+   ========================================================== */
+
+@media (max-width: 400px) {
+
+    .container {
+        padding: 18px;
+    }
+
+
+    .form {
+        padding: 18px;
+    }
+
+
+    h1 {
+        font-size: 28px;
+    }
+
+
+    #question {
+        font-size: 22px;
+    }
+
+
+    .evaluation-card {
+        padding: 20px;
+    }
+
+}
